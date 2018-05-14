@@ -1,0 +1,94 @@
+@import 'css/_varibles.scss';
+@import 'css/_base.scss';
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; 
+@import 'css/_helpers.scss'; 
+@import 'css/_menu.scss';
+@import 'css/_header.scss';  
+@import 'css/_button.scss';
+@import 'css/_title.scss';
+@import 'css/_baner.scss';
+@import 'css/_steps.scss';
+@import 'css/_in-numbers.scss';
+@import 'css/_testimonials.scss';
+@import 'css/_registration.scss'; 
+@import 'css/_blog.scss';
+@import 'css/_main-blog.scss';
+@import 'css/_sidebar.scss'; 
+
+section, footer { 
+    width: 100%;
+    float: left;
+}
+.footer {
+    background: $color-secondary;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 40px 0;
+    @include media(md) {
+        padding: 80px 0;
+    }
+}
+.footer__right {
+    margin-top: 40px;
+    text-align: left;
+    @include media(md) {
+        margin-top: 0x;
+        text-align: right;
+    }
+    img {
+        margin-right: -30px;
+    }
+}
+.footer__copyright {
+    font-size: em(14);
+    
+}
+.footer__title {
+    font-size: em(30);
+    font-weight: 200;
+}
+.footer__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer__menu__item {
+    a {
+        font-size: em(20);
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
+    }
+}
+.space {
+    padding: 100px 0;
+}
+.double {
+    .container {
+        position: relative;
+    }
+    overflow: hidden;
+   .double__image {
+       position: absolute;
+       height: 100%;
+       
+       background-size: 100%;
+        @include media(md) {
+            background: url('assets/images/double.jpg') no-repeat;
+            width: 40%;
+            left: -30px;
+            background-size: 100%;
+            
+        }
+        @include media(xl) {
+            background: url('assets/images/double.jpg') no-repeat;
+            width: 50%;
+            left: -50px;
+        }
+   }
+    
+}
+.logo {
+    position: relative;
+    z-index: 100;  
+}

@@ -1,0 +1,65 @@
+#registration {
+   margin-top: -100px;
+    .container {
+        padding: 0;
+        .col-12 {
+            padding: 0;
+        }
+    }
+    @include media(lg) {
+        margin-top: 0;
+        .container {
+            padding: 0 15px;
+            .col-12 {
+                padding: 0 15px;
+            }
+        }
+    }
+}
+.registration {
+    background: $color-secondary;
+    color: #fff;
+    width: 100%;
+    //margin-left: -30px;
+   
+    padding: 15px 15px 35px 15px;
+    .container {
+
+    }
+    
+    @include media(lg) {
+        width: 100%;
+        margin-top: -200px;
+        margin-left: -20px;
+        padding: 15px 15px 35px 15px;
+    }
+}
+.registration__title {
+    font-size: em(26);
+    font-weight: 300;
+    margin: 20px 0;
+}
+.registration__input {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin: 0 0 10px 0;
+    border: none;
+    border-bottom: solid 1px #fff;
+    font-size: em(20);
+    color: #fff;
+    background: transparent;
+    font-weight: 600;
+    &::placeholder {
+        color: #fff;
+        font-weight: 100;
+        
+    }
+    &:active, &:focus {
+        outline: none;
+        border-bottom: solid 2px #fff;
+        margin-bottom: 9px;
+        &::placeholder { 
+            color: transparent;
+        }
+    }
+}

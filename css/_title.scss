@@ -1,0 +1,36 @@
+.title {
+    color: #666666;
+    font-weight: 300;
+    line-height: 1.1em;
+    margin: 2.66em 0;
+    font-size: em(30);
+    strong {
+        font-weight: 800;
+    }
+}
+.title--big {
+    font-size: em(40);
+    margin: 0em 0 0.3em 0;
+    strong {
+        color: #ed4152;
+        font-weight: 800;
+    }
+    @include media(md) {
+        font-size: em(50);
+    }
+    @include media(lg) {
+        font-size: em(60);
+    }
+    @include media(xl) {
+        font-size: em(70);
+    }
+    
+}
+.title--category {
+    margin: 65px 0 50px -15px;
+    font-size: em(25);  
+    @include media(sm) {
+        margin: 65px 0 50px -30px;
+    }
+
+}

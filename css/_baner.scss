@@ -1,0 +1,122 @@
+.baner {
+    position: relative;
+    z-index: 10;
+    float: left;
+    width: 100%;
+    min-height: 100vh;
+    // background: url('assets/images/baner-pictures.png') no-repeat, url('assets/images/background-mobile.jpg');
+    /* Create the parallax scrolling effect */
+    background-attachment: scroll;
+    background-position: -180px 20px, center;
+    background-size: 200%, cover;
+    margin-top: -60px;
+   
+    @include media(sm) {
+        min-height: 120vh;
+        background-position: 60px 0px, center;
+        background-size: 120%, cover;
+     }
+     @include media(md) {
+        // background: url('assets/images/baner-pictures.png') no-repeat, url('assets/images/background.jpg');
+        background-attachment: scroll;
+        background-position: 10px 60px, top;
+        background-size: 130%, cover;
+        margin-top: -135px;
+        min-height: 768px;
+    //    / max-height: 100vmin;
+     }
+    
+    @include media(lg) {
+        margin-top: -135px;
+        //height: 778px;
+        //background: url('assets/images/baner-pictures.png'), url('assets/images/background.jpg');
+        /* Create the parallax scrolling effect */
+        //background-attachment: scroll;
+        //background-position: center 0px;
+       // background-repeat: no-repeat;
+        //background-size: contain, cover;
+    }
+    @include media(xl) {
+        background-size: contain, cover;
+        background-position: center 60px, center;
+    }
+
+    h1 {
+        margin: calc( 45vh + 60px ) 0 0 15px;
+        font-weight: 400;
+        font-size: 10vw;
+        max-width: 470px;
+        line-height: 1em;
+        color: #ed4152;
+        @include media(sm) {
+            margin: 20vmax 0 0 0;
+            font-size: 7vmax;
+        }
+        @include media(md) { 
+            margin: 360px 0 0 15px;
+            font-size: em(56);
+            max-width: 470px;
+        }
+        strong {
+            font-weight: 800;
+            color: #666666;
+        }
+       
+    }
+    .container {
+        position: relative;
+    }
+    .baner__description {
+        display: none;
+        position: absolute;
+        right: 10px;
+        margin: 0;
+        top: calc( 41vw + 60px );
+        @include media(xl) { 
+            display: none;
+            top: 40%;
+        }
+       
+        
+        strong {
+            font-weight: 800;
+            color: #ed4152;
+            font-size: 12vw;
+            line-height: 1em;
+            @include media(md) { 
+                font-size: em(149);
+            }
+           
+        }
+        span {
+            font-size: 7vw;
+            color: #666666;
+            font-weight: 800;
+            line-height: 0.5em;
+            @include media(md) { 
+                font-size: em(84);
+            }
+        }
+    }
+}
+.button--baner {
+    position: relative;
+    width: calc( 100% - 30px);
+    text-align: center; 
+    
+    margin-top: 30px;
+    font-size: 6vw;
+    font-weight: 900;
+    margin-left: 15px;
+    @include media(sm) {
+        width: auto;
+        font-size: 4vw;
+        margin-left: 0;
+    }
+    @include media(md) { 
+        position: absolute;
+        width: auto; 
+        font-size: em(36);  
+        top: 580px;
+    }
+}

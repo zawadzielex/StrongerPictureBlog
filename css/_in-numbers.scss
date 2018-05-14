@@ -1,0 +1,41 @@
+.in-numbers {
+    margin-top: -40px;
+    @include media(md) {
+        margin-top: 0;
+    }
+    img  {
+        margin-bottom: -20px;
+        margin-top: -20px;
+    }
+}
+.in-numbers__item {
+    margin-top: 20px;
+    @include media(md) {
+        margin-top: 0;
+    }
+}
+.in-numbers__title {
+    font-size: em(40);
+    font-weight: 200;
+    margin: 0;
+    color: $color-secondary;
+    @include media(xl) {
+        font-size: em(50);
+    }
+    @include media(lg) {
+        font-size: em(60);
+    }
+}
+.in-numbers__desc {
+    margin-top: 10px;
+    font-size: em(20);
+    font-weight: 800;
+    color: $color-primary;
+    
+    @include media(md) {
+        font-size: em(20);
+    }
+    @include media(xl) {
+        font-size: em(30);
+    }
+}

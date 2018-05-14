@@ -1,0 +1,132 @@
+.sidebar {
+    margin-top: 50px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 30px;
+    background: #e7e7e7;   
+    &:first-of-type {
+        margin-top: 65px;
+    }
+    &:last-of-type {
+        margin-bottom: 50px;
+    }
+    @include media(sm) {
+        margin-right: auto;
+       
+    }
+}
+
+.sidebar__icon {
+
+}
+.sidebar__title {
+    color: $color-primary;
+    margin: 0 0 20px 0;
+}
+.sidebar__post {
+    margin-bottom: 30px;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.sidebar__post__date {
+    font-size: em(14);
+    font-weight: 600;
+    color: $color-secondary;
+    margin-bottom: 10px;
+}
+.sidebar__post__date__icon {
+
+}
+
+.sidebar__post__title {
+    display: block;
+    font-size: em(14);
+    color: $color-trietary;
+    margin: 0;
+    text-decoration: none;
+    &:hover {
+        color: $color-secondary;
+    }
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar__categories__item {
+    font-size: em(14);
+    margin-bottom: 18px;
+    a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0 0 0 20px;
+        background: url('assets/images/icon-categories-item.png') no-repeat left;
+    }
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+// modificatirs
+.sidebar--red {
+    background: $color-secondary;
+    .sidebar__title {
+        color: $color-light
+    }
+}
+
+.apw-posts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.apw-list-item {
+    margin-bottom: 30px;
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+.entry-title {
+    font-size: em(14);
+    margin: 0;
+}
+.entry-title a {
+    display: block;
+    color: $color-trietary;
+    margin: 0 0 5px 0;
+    text-decoration: none;
+    font-weight: 500;
+    &:hover {
+        color: $color-secondary;
+    }
+}
+.post-date {
+    font-size: em(14);
+    font-weight: 600;
+    color: $color-secondary;
+    margin-bottom: 20px;
+    padding: 0 0 0 20px;
+    background: url('assets/images/icon-calendar.png') no-repeat left;
+    a {
+        text-decoration: none;
+        color: $color-secondary;
+       
+    }
+}
+
+.cat-item {
+    font-size: em(14);
+    margin-bottom: 18px;
+    a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0 0 0 20px;
+        background: url('assets/images/icon-categories-item.png') no-repeat left;
+    }
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
